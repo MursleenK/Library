@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
-    <title>Library</title>
+    <script src="./script.js" defer></script>
+    <title>Library</title>  
 </head>
 <body>
+
+    <div class="container">
+        <div class="top">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="white" viewBox="0 0 24 24"><title>bookshelf</title><path d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z" /></svg>
+            <h1>Your Personal Library</h1>
+        </div>
+        <div class="bookInfo">
+            <form method="post">
+                <legend>Add a new book!</legend>
+                <input type="text" id="title" name="title" placeholder="What's the name of the book?">
+                <input type="text" id="author" name="author" placeholder="Who is the author of the book?">
+                <input type="number" id="pages" name="pages" placeholder="How many pages does the book have?">
+                    <label for="status">Have you read the book?
+                        <input type="checkbox" id="status" name="status" value="Unread">
+                    </label>    
+                <button type="submit" id="button">Add to Library</button>
+            </form>
+        </div>
+        <div class="library">
+            <div class="markers">
+                <div class="title">Title</div>
+                <div class="author">Author</div>
+                <div class="pages">Pages</div>
+                <div class="status">Status</div>
+                <div class="remove">Remove</div>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
