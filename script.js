@@ -1,6 +1,6 @@
 let count=0;
 const myLibrary = [{
-  name:"The Pragmatic Programmer: From Journeyman",
+  name:"The Pragmatic Programmer",
   author: "Andy Hunt",
   pages: 321,
   status: "Unread",
