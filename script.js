@@ -6,11 +6,13 @@ const myLibrary = [{
   status: "Unread",
 },];
 
-function Book(name, author, pages, status) {
+class Book {
+  constructor (name, author, pages, status) {
   this.name=name;
   this.author=author;
   this.pages=pages;
   this.status=status;
+  }
 }
 
 function addBookToArray() {
@@ -21,7 +23,7 @@ function addBookToArray() {
   const button = document.getElementById("button");
 
   //I am using a single checkbox to control the read/unread status of the book. The code below does that. 
-  status.addEventListener("input", ()=>{
+  status.addEventListener("click", ()=>{
     if(status.value==="Unread") {
     status.value="Read";
   } else{status.value="Unread"}
