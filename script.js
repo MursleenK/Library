@@ -7,7 +7,7 @@ const myLibrary = [{
 },];
 
 class Book {
-  constructor(name, author, pages, status) {
+  constructor (name, author, pages, status) {
   this.name=name;
   this.author=author;
   this.pages=pages;
